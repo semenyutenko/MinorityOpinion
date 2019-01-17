@@ -5,13 +5,14 @@ public class Player {
     private static int NUMBER = 0;
 
     //region fields
-    private int numberPlayer;
+    private int playerNumber;
     private String playerName;
-    private double account;
+    private double playerAccount;
+    private String playerPassword;
     //endregion
 
     public Player(){
-        numberPlayer = NUMBER;
+        playerNumber = NUMBER;
         NUMBER++;
     }
 
@@ -22,14 +23,21 @@ public class Player {
         return playerName;
     }
 
-    public void setAccount(double account) {
-        this.account = account;
+    public void setPlayerAccount(double playerAccount) {
+        this.playerAccount = playerAccount;
     }
-    public double getAccount() {
-        return account;
+    public double getPlayerAccount() {
+        return playerAccount;
     }
 
-    public int getNumberPlayer() {
-        return numberPlayer;
+    public void setPlayerPassword(String playerPassword) {
+        this.playerPassword = playerPassword;
+    }
+    public boolean isAcceptable(String key_pass){
+        return key_pass.equals(playerPassword);
+    }
+
+    public int getPlayerNumber() {
+        return playerNumber;
     }
 }

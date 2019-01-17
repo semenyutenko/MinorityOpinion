@@ -7,8 +7,8 @@ public class Game {
     private static int NUMBER = 0;
 
     //region fields
-    private int numberGame;
-    private String textQuestion;
+    private int gameNumber;
+    private String question;
     private String answerA;
     private String answerB;
     private int countA = 0;
@@ -18,16 +18,16 @@ public class Game {
     //endregion
 
     public Game(){
-        numberGame = NUMBER;
+        gameNumber = NUMBER;
         NUMBER++;
         date = new Date();
     }
 
-    public void setTextQuestion(String textQuestion) {
-        this.textQuestion = textQuestion;
+    public void setQuestion(String question) {
+        this.question = question;
     }
-    public String getTextQuestion() {
-        return textQuestion;
+    public String getQuestion() {
+        return question;
     }
 
     public void setAnswerA(String answerA) {
@@ -58,7 +58,7 @@ public class Game {
         return bate;
     }
 
-    public int getNumberGame() {
-        return numberGame;
+    public int getGameNumber() {
+        return gameNumber;
     }
 }

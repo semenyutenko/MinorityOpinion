@@ -2,5 +2,8 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#d81b60</color>
+    <color name="alert">#d81b37</color>
+    <color name="sign_up">#1b93d8</color>
+    <color name="log_in">#1bd844</color>
 </resources>
